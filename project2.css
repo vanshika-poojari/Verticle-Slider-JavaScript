@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+body{
+    height: 100vh;
+}
+
+.slider-container{ 
+    position: relative; 
+    overflow: hidden; 
+    width: 100vw; 
+    height: 100vh;
+}
+
+.left-slide{ 
+    height: 100%; 
+    width: 35%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.left-slide > div{ 
+ display: flex;
+flex-direction: coloumn; 
+align-items: center; 
+justify-content: center;
+color: #fff; 
+height: 100%; 
+width: 100%
+
+}
+
+.one > h1{ 
+font-size: 300%;
+margin-left: -90px;
+}
+.one > p{
+    font-size: 120%;
+    margin-bottom: -100px;
+    margin-left: -400px;
+}
+
+.one > h1{ 
+    font-size: 300%;
+    margin-left: -90px;
+
+    }
+    .one > p{
+        font-size: 120%;
+        margin-bottom: -80px;
+        margin-left: -400px;
+    }
+
+.two > h1{ 
+        font-size: 270%;
+        margin-left: -80px;
+        color: black;
+        }
+    .two > p{
+            font-size: 150%;
+            margin-bottom: -70px;
+            margin-left: -240px;
+            color: black;
+        }
+
+
+.three > h1{ 
+            font-size: 300%;
+            margin-left: -150px;
+            }
+    .three > p{
+                font-size: 100%;
+                margin-bottom: -90px;
+                margin-left: -300px;
+            }
+
+
+.four > h1{ 
+                font-size: 300%;
+                margin-left: -170px;
+                }
+        .four > p{
+                    font-size: 120%;
+                    margin-bottom: -80px;
+                    margin-left: -300px;
+                }
+
+.right-slide{ 
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 35%; 
+    width: 65%; 
+    transition: transform .5s ease-in-out;
+}
+
+.right-slide > div{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%; 
+    width: 100%; 
+}
+button{ 
+    background-color: white;
+    border: none;
+    color: grey; 
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px;
+
+}
+
+button:hover{ 
+    color: #222; 
+    
+}
+button:focus{ 
+outline:none;
+}
+
+.slider-container .action-buttons button{ 
+    position: absolute; 
+    z-index: 100; 
+    left: 35%; 
+    top: 50%;
+}
+
+.slider-container .action-buttons .down-button{
+
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button{
+
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
